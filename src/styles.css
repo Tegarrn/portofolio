@@ -1,0 +1,153 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928DAB);
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Navbar Styling */
+nav {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+nav h1 {
+  font-size: 24px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+}
+
+nav h1:hover {
+  color: #f39c12;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}i a:hover {
+  color: #f39c12;
+}
+
+/* Hero Section */
+#home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#home h2 {
+  font-size: 50px;
+  font-weight: bold;
+  background: linear-gradient(to right, #f39c12, #f1c40f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+#home p {
+  font-size: 18px;
+  opacity: 0.9;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Button Styling */
+.button {
+  background: linear-gradient(45deg, #f39c12, #f1c40f);
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile Menu */
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 20px;
+    animation: slideDown 0.3s ease-in-out;
+  }
+
+  .mobile-menu li {
+    margin-bottom: 15px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
