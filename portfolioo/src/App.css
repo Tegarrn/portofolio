@@ -43,6 +43,15 @@ body {
   @apply text-gray-900 dark:text-white;
 }
 
+/* Custom utility classes */
+.text-gradient {
+  @apply text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400;
+}
+
+.bg-gradient {
+  @apply bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600;
+}
+
 /* Animation keyframes */
 @keyframes float {
   0% {
@@ -58,6 +67,86 @@ body {
 
 .animate-float {
   animation: float 5s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 3s ease-in-out infinite;
+}
+
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
+}
+
+/* Text fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+/* Staggered animations for children */
+.stagger-children > * {
+  opacity: 0;
+}
+
+.stagger-children > *:nth-child(1) {
+  animation: fadeInUp 0.5s 0.1s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(2) {
+  animation: fadeInUp 0.5s 0.2s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(3) {
+  animation: fadeInUp 0.5s 0.3s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(4) {
+  animation: fadeInUp 0.5s 0.4s ease-out forwards;
+}
+
+.stagger-children > *:nth-child(5) {
+  animation: fadeInUp 0.5s 0.5s ease-out forwards;
 }
 
 /* Page transitions */
@@ -81,4 +170,69 @@ body {
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 400ms, transform 400ms;
+}
+
+/* Glass morphism effects */
+.glass {
+  @apply bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg border border-white border-opacity-20 shadow-lg;
+}
+
+.dark .glass {
+  @apply bg-gray-900 bg-opacity-50 border-gray-700 border-opacity-20;
+}
+
+/* Button effects */
+.btn-gradient {
+  @apply px-6 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-medium transition-all duration-300;
+}
+
+.btn-gradient:hover {
+  @apply shadow-lg transform -translate-y-1 from-indigo-700 to-purple-700;
+}
+
+/* Custom card styling */
+.card {
+  @apply bg-white dark:bg-gray-800 rounded-xl shadow-md border border-gray-200 dark:border-gray-700 overflow-hidden transition-all duration-300;
+}
+
+.card:hover {
+  @apply shadow-xl transform -translate-y-1;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  h1 {
+    @apply text-3xl;
+  }
+  
+  h2 {
+    @apply text-2xl;
+  }
+  
+  h3 {
+    @apply text-xl;
+  }
+}
+
+/* Loading animation */
+.loader {
+  @apply relative h-16 w-16;
+}
+
+.loader:before, .loader:after {
+  content: '';
+  @apply absolute top-0 left-0 w-full h-full rounded-full;
+}
+
+.loader:before {
+  @apply bg-indigo-100 dark:bg-indigo-900/30;
+}
+
+.loader:after {
+  @apply border-t-4 border-indigo-600 dark:border-indigo-400 animate-spin;
+}
+
+/* Custom shadow for dark mode */
+.dark .shadow-custom {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
