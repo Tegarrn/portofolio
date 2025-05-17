@@ -2,64 +2,72 @@
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A fully-featured e-commerce platform built with React, Node.js, and MongoDB. Features include user authentication, product management, shopping cart, payment integration, and order tracking.",
-    image: "/assets/projects/ecommerce.jpg",
-    tags: ["React", "Node.js", "MongoDB", "Express", "Redux", "Stripe"],
-    demoLink: "https://modern-ecommerce.example.com",
-    githubLink: "https://github.com/tegar/ecommerce-platform",
-    featured: true
-  },
-  {
-    id: 2,
-    title: "Secure Dashboard",
-    description: "An admin dashboard with advanced authentication, role-based access control, and real-time analytics. Implements best security practices and modern UI/UX principles.",
-    image: "/assets/projects/dashboard.jpg",
-    tags: ["React", "TypeScript", "Firebase", "TailwindCSS", "Chart.js"],
-    demoLink: "https://secure-dashboard.example.com",
-    githubLink: "https://github.com/tegar/secure-dashboard",
-    featured: true
-  },
-  {
-    id: 3,
-    title: "Real-time Chat Application",
-    description: "End-to-end encrypted chat application with features like group chats, file sharing, and video calls. Built with WebRTC and Socket.io for real-time communication.",
-    image: "/assets/projects/chat-app.jpg",
-    tags: ["React", "Node.js", "Socket.io", "WebRTC", "MongoDB"],
-    demoLink: "https://chat-app.example.com",
-    githubLink: "https://github.com/tegar/chat-application",
-    featured: true
-  },
-  {
-    id: 4,
-    title: "Portfolio Website Template",
-    description: "A customizable portfolio template for developers and designers. Features dark mode, responsive design, and smooth animations.",
-    image: "/assets/projects/portfolio.jpg",
-    tags: ["React", "TailwindCSS", "Framer Motion", "Next.js"],
-    demoLink: "https://portfolio-template.example.com",
-    githubLink: "https://github.com/tegar/portfolio-template",
+    title: "Landing page Ar",
+    description: "A modern and responsive landing page built with React for Learnity AR, an AR-based educational platform.",
+    details: "A modern and responsive landing page built with React for Learnity AR, an AR-based educational platform. The site showcases features such as interactive component scanning, AR/3D visualization, and detailed technical insights into pneumatic and automation components. Designed with clean UI/UX principles, this landing page highlights product features, navigation sections (Home, Components, Features, About, Contact), and includes a prominent call-to-action for app download",
+    image: "https://files.catbox.moe/afwd92.jpg",
+    tags: ["React", "JavaScript", "HTML5", "CSS3", "Tailwind CSS", "Framer Motion", "Responsive Design", "UI/UX", "Vercel", "Git"],
+    demoLink: "https://learnityar.vercel.app",
+    codeLink: "https://github.com/Tegarrn/bahanscanar",
     featured: false
   },
   {
-    id: 5,
-    title: "Blockchain Explorer",
-    description: "A web application to explore blockchain transactions and smart contracts. Provides detailed analytics and visualization of blockchain data.",
-    image: "/assets/projects/blockchain.jpg",
-    tags: ["React", "Web3.js", "D3.js", "Node.js", "Express"],
-    demoLink: "https://blockchain-explorer.example.com",
-    githubLink: "https://github.com/tegar/blockchain-explorer",
-    featured: false
+  id: 2,
+  title: "Daunnime",
+  description: "A responsive anime streaming platform integrated with a REST API for real-time anime data.",
+  details: "Daunnime is a modern anime streaming web app built with React, offering a seamless experience to explore, search, and watch anime. Integrated with a REST API to fetch the latest episodes and popular titles in real-time. Key features include dynamic anime browsing, search functionality, dark mode toggle, and batch download support. Designed with a clean and responsive UI that works well on both desktop and mobile devices.",
+  image: "https://files.catbox.moe/5uv1t2.jpg",
+  tags: ["React", "JavaScript", "REST API", "Axios", "Tailwind CSS", "Responsive Design", "Dark Mode"],
+  demoLink: "https://daunnime.vercel.app",
+  codeLink: "https://github.com/Tegarrn/daunnime",
+  featured: true
+  },
+
+  {
+  id: 3,
+  title: "WhatsApp Bot Automation",
+  description: "A powerful WhatsApp bot built with Node.js, featuring auto-replies, media handling, and custom commands.",
+  details: "An advanced WhatsApp bot application built with Node.js using the Baileys library. The bot supports real-time messaging, auto-responses, media handling (images, videos, audio), group interaction, and extendable command modules. Designed for scalability and ease of customization, it integrates well with external APIs and supports persistent sessions for reliability.",
+  image: "https://files.catbox.moe/4okg94.jpg",
+  tags: ["Node.js", "Baileys", "JavaScript", "REST API", "Automation", "Chatbot"],
+  demoLink: "https://wa.me/62895604556111",
+  codeLink: "https://github.com/tegar/whatsapp-bot",
+  featured: true
   },
   {
-    id: 6,
-    title: "Task Management System",
-    description: "A collaborative task management system with features like task assignment, progress tracking, and deadline notifications.",
-    image: "/assets/projects/task-management.jpg",
-    tags: ["React", "Redux", "Node.js", "MongoDB", "Socket.io"],
-    demoLink: "https://task-system.example.com",
-    githubLink: "https://github.com/tegar/task-management",
-    featured: false
-  }
+  id: 4,
+  title: "React Developer Portfolio",
+  description: "A responsive and modern portfolio website built with React, featuring dark/light mode toggle and clean UI.",
+  details: "A responsive and fully customizable portfolio website built using React. It includes dark and light mode toggling, smooth animations, and a clean, professional layout. Sections include About, Projects, Skills, Contact, and Social Links. Designed with mobile-first responsiveness and optimized for performance and accessibility. Perfect for showcasing personal projects and developer experience.",
+  image: "https://files.catbox.moe/m9giy2.jpg",
+  tags: ["React", "Tailwind CSS", "Framer Motion", "Dark Mode", "Responsive Design", "Light Mode", "SEO"],
+  demoLink: "https://portofolio-pi-liart.vercel.app",
+  codeLink: "https://github.com/Tegarrn/portofolio",
+  featured: true
+ },
+ {
+  id: 5,
+  title: "WhatsApp Bot REST API",
+  description: "A RESTful API built with JavaScript to serve as the backend for WhatsApp bot features.",
+  details: "A RESTful API developed using JavaScript (Node.js + Express) to power and manage various features of a WhatsApp bot. This API handles functionalities such as dynamic command processing, user session management, media fetching, and interaction with external services like YouTube or AI endpoints. It is secured using JWT-based authentication, follows REST best practices, includes middleware for logging and validation, and uses MongoDB for persistent data storage. The API is tested with Postman and documented for easy integration.",
+  image: "https://files.catbox.moe/q7lky1.jpg",
+  tags: ["JavaScript", "Node.js", "Express", "REST API", "JWT", "WhatsApp Bot"],
+  demoLink: "https://api-bot-wa.vercel.app",
+  codeLink: "https://github.com/Tegarrn/api_bot-wa",
+  featured: false
+},
+{
+  id: 6,
+  title: "Cek Khodam - MPLS SMANDA",
+  description: "A fun web-based personality quiz built with vanilla JavaScript, HTML, and CSS for MPLS SMAN 2 Sragen.",
+  details: "Cek Khodam is a simple and fun web application created for the MPLS (Masa Pengenalan Lingkungan Sekolah) extracurricular program at SMAN 2 Sragen. Developed using only HTML, CSS, and JavaScript, the site lets students answer entertaining questions and get random 'khodam' results. It was designed to boost engagement, humor, and school spirit during the student orientation week. The UI is fully responsive and lightweight, ensuring smooth performance on all devices.",
+  image: "https://files.catbox.moe/pq3h74.jpg",
+  tags: ["JavaScript", "HTML5", "CSS3", "Responsive Design", "Vanilla JS", "Fun Project"],
+  demoLink: "https://cekkhodam-seven.vercel.app",
+  codeLink: "https://github.com/Tegarrn/cekkhodam",
+  featured: false
+}
+
 ];
 
 export default projects;

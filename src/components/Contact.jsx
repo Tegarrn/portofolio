@@ -70,39 +70,39 @@ const Contact = () => {
       name: 'GitHub', 
       icon: <Github className="h-6 w-6" />, 
       link: 'https://github.com/tegarmunwr',
-      username: '@tegarmunwr',
+      username: '@tegarrn',
       hoverClass: 'hover:bg-gray-800 dark:hover:bg-gray-700',
       color: 'text-gray-800 dark:text-gray-200'
     },
     { 
       name: 'LinkedIn', 
       icon: <Linkedin className="h-6 w-6" />, 
-      link: 'https://linkedin.com/in/tegarmunwarohman',
-      username: 'tegarmunwarohman',
+      link: 'www.linkedin.com/in/tegar-rahmat-nugroho',
+      username: 'Tegar Rahmat Nugroho',
       hoverClass: 'hover:bg-blue-600 dark:hover:bg-blue-700',
       color: 'text-blue-600 dark:text-blue-400'
     },
     { 
       name: 'Instagram', 
       icon: <Instagram className="h-6 w-6" />, 
-      link: 'https://instagram.com/tegarmunwr',
-      username: '@tegarmunwr',
+      link: 'https://instagram.com/yegaru87',
+      username: '@yegaru87',
       hoverClass: 'hover:bg-pink-600 dark:hover:bg-pink-700',
       color: 'text-pink-600 dark:text-pink-400'
     },
     { 
       name: 'Email', 
       icon: <Mail className="h-6 w-6" />, 
-      link: 'mailto:tegar@example.com',
-      username: 'tegar@example.com',
+      link: 'mailto: tegaru89@gmail.com',
+      username: 'tegaru89@gmail.com',
       hoverClass: 'hover:bg-indigo-600 dark:hover:bg-indigo-700',
       color: 'text-indigo-600 dark:text-indigo-400'
     },
     { 
       name: 'WhatsApp', 
       icon: <Phone className="h-6 w-6" />, 
-      link: 'https://wa.me/6281234567890',
-      username: '+62 812-3456-7890',
+      link: 'https://wa.me/6289521914717',
+      username: '+62 895-2191-4717',
       hoverClass: 'hover:bg-green-600 dark:hover:bg-green-700',
       color: 'text-green-600 dark:text-green-400'
     }
@@ -113,19 +113,19 @@ const Contact = () => {
     {
       icon: <Mail className="h-5 w-5" />,
       title: 'Email',
-      details: 'tegar@example.com',
+      details: 'tegaru89@gmail.com',
       color: 'bg-indigo-100 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400'
     },
     {
       icon: <Phone className="h-5 w-5" />,
       title: 'Phone',
-      details: '+62 812-3456-7890',
+      details: '+62 895-2191-4717',
       color: 'bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400'
     },
     {
       icon: <MapPin className="h-5 w-5" />,
       title: 'Location',
-      details: 'Jakarta, Indonesia',
+      details: 'Sragen, Indonesia',
       color: 'bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400'
     },
     {
@@ -206,7 +206,7 @@ const Contact = () => {
                     <MapPin className="h-12 w-12 text-indigo-600 dark:text-indigo-400 animate-bounce" />
                   </div>
                   <div className="absolute bottom-4 left-4 bg-white dark:bg-gray-800 px-3 py-1 rounded-lg shadow-md border border-gray-200 dark:border-gray-700">
-                    <p className="text-sm font-medium text-gray-900 dark:text-white">Jakarta, Indonesia</p>
+                    <p className="text-sm font-medium text-gray-900 dark:text-white">Sragen, Indonesia</p>
                   </div>
                 </div>
               </div>

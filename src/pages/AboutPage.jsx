@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 const AboutPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
-    document.title = 'About | Tegar Portfolio';
+    document.title = 'Tegar | About';
   }, []);
 
   return (

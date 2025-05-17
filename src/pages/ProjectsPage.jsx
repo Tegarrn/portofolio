@@ -10,6 +10,7 @@ const ProjectsPage = () => {
   const [expandedProject, setExpandedProject] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [filteredProjects, setFilteredProjects] = useState(projects);
+  const [showFullDescription, setShowFullDescription] = useState({});
   const projectRefs = useRef({});
 
   // Extract unique tags from all projects
@@ -54,6 +55,13 @@ const ProjectsPage = () => {
 
   const toggleProjectDetails = (id) => {
     setExpandedProject(expandedProject === id ? null : id);
+  };
+
+  const toggleDescriptionLength = (id) => {
+    setShowFullDescription(prev => ({
+      ...prev,
+      [id]: !prev[id]
+    }));
   };
 
   // Animations on scroll
@@ -163,7 +171,15 @@ const ProjectsPage = () => {
                 
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-gray-900 dark:text-white">{project.title}</h3>
-                  <p className="text-gray-600 dark:text-gray-400 mb-4 line-clamp-2">{project.description}</p>
+                  <div className="text-gray-600 dark:text-gray-400 mb-4">
+                    {expandedProject === project.id ? (
+                      <div>
+                        <p>{project.details}</p>
+                      </div>
+                    ) : (
+                      <p className="line-clamp-2">{project.description}</p>
+                    )}
+                  </div>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, i) => (
@@ -213,9 +229,6 @@ const ProjectsPage = () => {
                   {/* Expanded Project Details */}
                   {expandedProject === project.id && (
                     <div className="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700 animate-fadeInUp">
-                      <p className="text-gray-700 dark:text-gray-300 mb-4">
-                        {project.details}
-                      </p>
                       <div className="grid grid-cols-2 gap-4">
                         <div className="col-span-2 md:col-span-1">
                           <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Technologies</h4>

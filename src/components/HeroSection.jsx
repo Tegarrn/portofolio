@@ -7,7 +7,7 @@ const HeroSection = () => {
     setIsVisible(true);
   }, []);
 
-  const roles = ["Frontend Developer", "UI/UX Designer", "Cyber Security", "Web Engineer"];
+  const roles = ["Frontend Developer", "Cyber Security"];
   const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);

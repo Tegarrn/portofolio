@@ -4,7 +4,7 @@ import HeroSection from '../components/HeroSection';
 const Home = () => {
   useEffect(() => {
     // Set page title when component mounts
-    document.title = 'Tegar Portfolio | Home';
+    document.title = 'Tegar | Home';
     
     // Optional: Scroll to top when this page loads
     window.scrollTo(0, 0);
